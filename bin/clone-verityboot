@@ -1,0 +1,2 @@
+#!/bin/bash
+git clone https://mikbras:${GIT_CRED}@github.com/mikbras/verityboot
