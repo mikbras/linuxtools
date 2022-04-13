@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$#" == "2" ]; then
+    branch=$1
+    dir=$2
+elif [ "$#" == "1" ]; then
+    branch=$1
+elif [ "$#" == "0" ]; then
+    branch="main"
+else
+    echo "Usage: $0 [branch] [dir]"
+    exit 1
+fi
+
+echo "${branch}" >> $HOME/.clone
+
+git clone https://mikbras:${GIT_CRED}@github.com/mikbras/mystikos -b ${branch} ${dir}
