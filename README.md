@@ -7,6 +7,7 @@ Steps for setting up a new machine/VM:
     (*) add PuTTY entry for this address
     (*) $ cat bashrc >> ~/.bashrc
     (*) update "GIT_CRED" variable in ~/.bashrc
+    (*) $ source .bashrc
     (*) git config --global user.email "mikbras@microsoft.com"
     (*) git config --global user.name "Mike Brasher"
     (*) $ cp ./bin ~/bin
