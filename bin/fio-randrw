@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo fio --name=fio.test --size=16GB --rw=randrw --bs=4k --iodepth=16 --numjobs=16 --direct=1 --runtime=60 --overwrite=1 --thread --group_reporting --ioengine=libaio --filename=fio-test.data
