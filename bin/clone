@@ -4,5 +4,4 @@ if [ "$#" != "1" ]; then
     exit 1
 fi
 url="${1#https://github.com/}"
-echo url=$url
-echo git clone https://mikbras:${GIT_CRED}@github.com/$url
+git clone https://mikbras:${GIT_CRED}@github.com/$url
