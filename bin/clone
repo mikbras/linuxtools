@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$#" != "1" ]; then
+    echo "Usage: $0: <url>"
+    exit 1
+fi
+url="${1#https://github.com/}"
+echo url=$url
+echo git clone https://mikbras:${GIT_CRED}@github.com/$url
