@@ -1,0 +1,10 @@
+#!/bin/bash
+for i
+do
+    echo $i...
+    filename=$i
+    tmpfile=.$i.sub
+    rm -f "${tmpfile}"
+    mv "${filename}" "${tmpfile}"
+    sed -f /tmp/sub.sed "${tmpfile}" > "${filename}"
+done
