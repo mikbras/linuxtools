@@ -1,0 +1,15 @@
+How to create and use a Git SSH key
+
+$ ssh-keygen -t ed25519 -C mikbras@microsoft.com
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_ed25519 # Igitit.111
+$ cat /home/mike/.ssh/id_ed25519.pub # add this key on github site
+$ ssh -T git@github.com
+$ git clone git@github.com:mikbras/tacto
+
+# .ssh/id_ed25519
+# .ssh/id_ed25519.pub
+
+# Repeat
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_ed25519 # Igitit.111
