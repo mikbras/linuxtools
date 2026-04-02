@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ "$#" != 2 ]; then
+    echo "Usage: $0 <input> <output>"
+    exit 1
+fi
+openssl enc -aes-256-cbc -d -salt -pbkdf2 -in $1 -out $2
